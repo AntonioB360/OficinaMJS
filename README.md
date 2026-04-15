@@ -29,7 +29,7 @@ O objetivo é centralizar e otimizar processos como cadastro de clientes, contro
 
 
 ## 🛠️ Tecnologias Utilizadas
-*(Ajusta conforme o teu stack real)*
+
 
 - Frontend: JSP, CSS, JavaScript 
 - Backend: Java Servlets  
@@ -45,7 +45,7 @@ Algumas funcionalidades podem estar incompletas ou sujeitas a mudanças.
 ---
 
 ## 📦 Como Executar o Projeto
-*(Adapta conforme o teu setup real)*
+
 
 1. Clonar o repositório:
 ```bash
