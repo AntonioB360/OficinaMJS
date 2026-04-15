@@ -26,7 +26,7 @@ O objetivo é centralizar e otimizar processos como cadastro de clientes, contro
 - [ ] Sistema de autenticação de usuários  
 - [ ] Dashboard administrativo  
 
----
+
 
 ## 🛠️ Tecnologias Utilizadas
 *(Ajusta conforme o teu stack real)*
