@@ -1,0 +1,47 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 30/04/2026, 23:06:25
+    Author     : T
+*/
+
+ /* [CSS PURO] motivo: gradiente customizado LOGIN_BACKGROUND_GRADIENT_START (#0A2540) → LOGIN_BACKGROUND_GRADIENT_END (#3B82F6) não disponível como classe Tailwind padrão */
+    .header-gradient {
+      background: linear-gradient(135deg, #0A2540 0%, #3B82F6 100%);
+    }
+
+    /* [CSS PURO] motivo: ring de foco com cor exata LOGIN_INPUT_FOCUS (#3B82F6) e opacidade personalizada não coberta pelo Tailwind padrão */
+    .input-field:focus {
+      outline: none;
+      border-color: #3B82F6;
+      box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+    }
+
+    /* [CSS PURO] motivo: estado de erro combinando COLOR_ERROR (#EF4444) no border com COLOR_ERROR_BG (#FEE2E2) no background num único seletor de estado */
+    .input-field.error {
+      border-color: #EF4444;
+      background-color: #FEE2E2;
+    }
+
+    /* [CSS PURO] motivo: seta customizada do select nativo via background-image, não disponível no Tailwind padrão */
+    select.input-field {
+      appearance: none;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='%2364748B' d='M1 1l5 5 5-5'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 12px center;
+      padding-right: 2rem;
+      cursor: pointer;
+    }
+
+    /* [CSS PURO] motivo: animação de entrada do toast com translateY e cubic-bezier não disponível no Tailwind padrão */
+    .toast {
+      transform: translateY(80px);
+      opacity: 0;
+      transition: all 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
+    }
+    .toast.show {
+      transform: translateY(0);
+      opacity: 1;
+    }

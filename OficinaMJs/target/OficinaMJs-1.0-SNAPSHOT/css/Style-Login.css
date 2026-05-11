@@ -1,0 +1,197 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 30/04/2026, 22:22:56
+    Author     : T
+*/
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-image: url("../imagens/fundo.png");
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      padding: 2rem;
+    }
+
+    .card {
+      background: #FFFFFF;
+      border-radius: 16px;
+      padding: 2.5rem 2rem;
+      width: 100%;
+      max-width: 420px;
+    }
+
+    .logo {
+      width: 48px;
+      height: 48px;
+      background: #3B82F6;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 1rem;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .header h1 {
+      font-size: 20px;
+      font-weight: 600;
+      color: #0A2540;
+      margin-bottom: 4px;
+    }
+
+    .header p {
+      font-size: 14px;
+      color: #64748B;
+    }
+
+    .form-group {
+      margin-bottom: 1.25rem;
+    }
+
+    label {
+      display: block;
+      font-size: 13px;
+      font-weight: 500;
+      color: #0A2540;
+      margin-bottom: 6px;
+    }
+
+    input[type="email"],
+    input[type="password"],
+    input[type="text"] {
+      width: 100%;
+      padding: 10px 14px;
+      border: 1.5px solid #CBD5F5;
+      border-radius: 8px;
+      font-size: 14px;
+      color: #0A2540;
+      outline: none;
+      background: #FFFFFF;
+      transition: border-color 0.2s;
+    }
+
+    input[type="email"]:focus,
+    input[type="password"]:focus,
+    input[type="text"]:focus {
+      border-color: #3B82F6;
+    }
+
+    .password-wrapper {
+      position: relative;
+    }
+
+    .password-wrapper input {
+      padding-right: 42px;
+    }
+
+    .toggle-password {
+      position: absolute;
+      right: 12px;
+      top: 50%;
+      transform: translateY(-50%);
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 0;
+      display: flex;
+      align-items: center;
+    }
+
+    #passwordStatus {
+      display: none;
+      font-size: 11px;
+      font-weight: 600;
+      margin-top: 6px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .error-msg {
+      display: none;
+      font-size: 12px;
+      color: #EF4444;
+      margin-top: 4px;
+    }
+
+    .form-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 1.5rem;
+    }
+
+    .remember {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 13px;
+      color: #64748B;
+      cursor: pointer;
+    }
+
+    .remember input[type="checkbox"] {
+      accent-color: #3B82F6;
+      width: 15px;
+      height: 15px;
+    }
+
+    .forgot {
+      font-size: 13px;
+      color: #3B82F6;
+      text-decoration: none;
+    }
+
+    .forgot:hover { color: #2563EB; }
+
+    .btn-submit {
+      width: 100%;
+      padding: 11px;
+      background: #3B82F6;
+      color: #FFFFFF;
+      border: none;
+      border-radius: 8px;
+      font-size: 14px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+
+    .btn-submit:hover { background: #2563EB; }
+
+    .success-msg {
+      display: none;
+      background: #D1FAE5;
+      border: 1px solid #10B981;
+      border-radius: 8px;
+      padding: 10px 14px;
+      font-size: 13px;
+      color: #065F46;
+      text-align: center;
+      margin-top: 1rem;
+    }
+
+    .signup-link {
+      text-align: center;
+      font-size: 13px;
+      color: #64748B;
+      margin-top: 1.5rem;
+    }
+
+    .signup-link a {
+      color: #3B82F6;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .signup-link a:hover { color: #2563EB; }

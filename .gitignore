@@ -1,6 +1,9 @@
 
 .vscode
 
+paleta.md
+Cronograma de actividades para o terceiro projecto.docx
+
 # Build
 /target/
 
@@ -31,3 +34,5 @@ Thumbs.db
 
 # Java
 *.class
+/CadastroProduto/nbproject/private/
+/CadastroProduto/build/

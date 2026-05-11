@@ -1,0 +1,65 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 30/04/2026, 22:05:29
+    Author     : T
+*/
+
+ /* [CSS PURO] motivo: gradiente diagonal no fundo — Tailwind não suporta graus arbitrários sem config extra */
+    body {
+      background: linear-gradient(140deg, #0A2540 0%, #1e3a5f 40%, #3B82F6 100%);
+      min-height: 100vh;
+    }
+
+    /* [CSS PURO] motivo: animação de fade+slide na troca de abas — não disponível via classes Tailwind padrão */
+    .tab-panel { display: none; animation: fadeSlide 0.25s ease; }
+    .tab-panel.active { display: block; }
+    @keyframes fadeSlide {
+      from { opacity: 0; transform: translateY(6px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    /* [CSS PURO] motivo: input focus com cor exata da paleta LOGIN_INPUT_FOCUS — não é uma cor Tailwind nativa */
+    input:focus, select:focus {
+      outline: none;
+      border-color: #3B82F6;
+      box-shadow: 0 0 0 3px rgba(59,130,246,0.15);
+    }
+    input.error { border-color: #EF4444 !important; }
+    input.error:focus { box-shadow: 0 0 0 3px rgba(239,68,68,0.15) !important; }
+
+    /* [CSS PURO] motivo: card visual do cartão 3D com gradiente de marca — requer múltiplas propriedades não cobertas pelo Tailwind */
+    .card-preview {
+      background: linear-gradient(135deg, #0A2540 0%, #1e3a6e 50%, #2563EB 100%);
+      border-radius: 14px;
+      padding: 1.5rem;
+      color: white;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 8px 32px rgba(10,37,64,0.35);
+    }
+    .card-preview::before {
+      content: '';
+      position: absolute;
+      top: -40px; right: -40px;
+      width: 160px; height: 160px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.06);
+    }
+    .card-preview::after {
+      content: '';
+      position: absolute;
+      bottom: -30px; left: 60px;
+      width: 120px; height: 120px;
+      border-radius: 50%;
+      background: rgba(59,130,246,0.2);
+    }
+
+    /* [CSS PURO] motivo: chip do cartão com gradiente metálico — efeito decorativo não coberto pelo Tailwind */
+    .chip {
+      width: 40px; height: 30px;
+      border-radius: 5px;
+      background: linear-gradient(135deg, #d4af37, #f5e17a, #c8a82a);
+    }
